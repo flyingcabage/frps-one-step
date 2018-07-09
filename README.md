@@ -2,7 +2,7 @@
 frps一键安装脚本
 
 
-#安装 
+# 安装 
 
 ```sh
 wget --no-check-certificate https://raw.githubusercontent.com/panw3i/frps-one-step/master/install-frps.sh
@@ -10,7 +10,7 @@ chmod 700 ./install-frps.sh
 ./install-frps.sh install
 ```
 
-#说明
+# 说明
 ```shell
 Loading network version for frps, please wait...
 frps Latest release file frp_0.8.1_linux_amd64.tar.gz    #此步骤会自动获取frp最新版本，自动操作，无需理会
@@ -44,8 +44,8 @@ Please input frps log_max_days [1-30]
 Enter your choice (1, 2 or exit. default [1]):      #设置是否开启日志记录，默认开启，开启后日志等级及保留天数生效，否则等级和保留天数无效
 
 ```
-
-#客户端配置
+ 
+# 客户端配置
 ```ini
 [common]
 server_addr = 39.108.123.145  
@@ -57,7 +57,7 @@ local_port = 8086
 custom_domains = 39.108.123.145
 ```
 
-#命令
+# 命令
 ```shell
 ./install-frps.sh update      更新命令
 ./install-frps.sh uninstall     卸载命令/etc/init.d/frps start
